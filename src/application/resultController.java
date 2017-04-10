@@ -3,16 +3,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  * Created by Ashfaq on 4/7/17.
  */
 public class resultController {
-
+testDB db = new testDB();
     @FXML
     private TextField txtName;
     @FXML
@@ -65,8 +67,8 @@ public class resultController {
         int i9 = Integer.parseInt(mod9E);
         int i10 = Integer.parseInt(mod10E);
 
-        try(Connection con = DriverManager.getConnection()){
-            String sqlStatement = "INSERT INTO Marks Sheet(Name,Student Id,Module 1,Module 2,Module 3,Module 4, Module 5,Module 6,Module 7, Module 8, Module 9, Module 10) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+        try(Connection con = DriverManager.getConnection(db.db_URL,db.db_Username,db.db_Password)){
+            String sqlStatement = "INSERT INTO marksheet(stName,StudentId,Module1,Module2,Module3,Module4, Module5,Module6,Module7, Module8, Module9, Module10) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement statement = con.prepareStatement(sqlStatement);
 
             statement.setString(1, nameE);
@@ -76,12 +78,16 @@ public class resultController {
             statement.setInt(5, i4);
             statement.setInt(6, i5);
             statement.setInt(7, i6);
+            statement.setInt(8, i7);
+            statement.setInt(9, i8);
+            statement.setInt(10, i9);
+            statement.setInt(11, i10);
             JOptionPane.showMessageDialog(null, "Results Added Successfully");
             statement.executeUpdate();
-            clearReuslts();
+           // clearReuslts();
 
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, e);
+            System.out.println(e);
         }
 
     }

@@ -19,8 +19,8 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-        testDB db = new testDB();
-        db.db_Connect();
+       // testDB db = new testDB();
+        //db.db_Connect();
 
     }
 }

@@ -30,7 +30,6 @@ public class Controller {
 
 
     public void loginAuthentication(ActionEvent event) throws IOException {
-
         String usernameE = txtUsername.getText();
         String passwordE = txtPassword.getText();
 
