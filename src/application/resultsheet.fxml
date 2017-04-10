@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="5.0" layoutY="63.0" prefHeight="601.0" prefWidth="841.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Modules">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="841.0">
+                     <children>
+                        <AnchorPane layoutX="8.0" layoutY="164.0" prefHeight="312.0" prefWidth="413.0">
+                           <children>
+                              <Label layoutX="23.0" layoutY="75.0" text="Introduction to Computer Science" />
+                              <Label layoutX="23.0" layoutY="103.0" text="Introduction to theory of computation" />
+                              <Label layoutX="21.0" layoutY="130.0" text="Introduction to Computer Architecture" />
+                              <Label layoutX="23.0" layoutY="159.0" text="Programming and electronics laboratories" />
+                              <Label layoutX="23.0" layoutY="187.0" text="Seminar" />
+                              <Label layoutX="23.0" layoutY="212.0" text="Data structures and Algorithms" />
+                              <Label layoutX="23.0" layoutY="240.0" text="Programming techniques" />
+                              <CheckBox layoutX="324.0" layoutY="75.0" mnemonicParsing="false" text="Pass" />
+                              <CheckBox layoutX="324.0" layoutY="103.0" mnemonicParsing="false" text="Pass" />
+                              <CheckBox layoutX="324.0" layoutY="130.0" mnemonicParsing="false" text="Pass" />
+                              <CheckBox layoutX="324.0" layoutY="159.0" mnemonicParsing="false" text="Pass" />
+                              <CheckBox layoutX="324.0" layoutY="187.0" mnemonicParsing="false" text="Pass" />
+                              <CheckBox layoutX="324.0" layoutY="212.0" mnemonicParsing="false" text="Pass" />
+                              <CheckBox layoutX="324.0" layoutY="240.0" mnemonicParsing="false" text="Pass" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="421.0" layoutY="17.0" prefHeight="443.0" prefWidth="414.0">
+                           <children>
+                              <TabPane layoutX="3.0" layoutY="12.0" prefHeight="340.0" prefWidth="409.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="Semester 1">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="149.0" prefWidth="409.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="42.0" prefHeight="17.0" prefWidth="151.0" text="Database systems " />
+                                                <Label layoutX="10.0" layoutY="88.0" prefHeight="17.0" prefWidth="160.0" text="Operating system design " />
+                                                <Label layoutX="10.0" layoutY="139.0" prefHeight="17.0" prefWidth="268.0" text="Computer Networks &amp; Distributed systems " />
+                                                <Label layoutX="10.0" layoutY="185.0" prefHeight="17.0" prefWidth="146.0" text="Artificial Intelligence " />
+                                                <Label layoutX="12.0" layoutY="235.0" prefHeight="17.0" prefWidth="245.0" text="Advanced topics in computer graphics " />
+                                                <TextField fx:id="mod1" layoutX="344.0" layoutY="37.0" prefHeight="27.0" prefWidth="51.0" />
+                                                <TextField fx:id="mod2" layoutX="344.0" layoutY="83.0" prefHeight="27.0" prefWidth="51.0" />
+                                                <TextField fx:id="mod3" layoutX="344.0" layoutY="134.0" prefHeight="27.0" prefWidth="51.0" />
+                                                <TextField fx:id="mod4" layoutX="344.0" layoutY="180.0" prefHeight="27.0" prefWidth="51.0" />
+                                                <TextField fx:id="mod5" layoutX="344.0" layoutY="230.0" prefHeight="27.0" prefWidth="51.0" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Semester 2">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="317.0" prefWidth="409.0">
+                                             <children>
+                                                <AnchorPane prefHeight="318.0" prefWidth="411.0">
+                                                   <children>
+                                                      <Label layoutX="18.0" layoutY="29.0" prefHeight="17.0" prefWidth="151.0" text="Software engineering " />
+                                                      <Label layoutX="14.0" layoutY="75.0" prefHeight="17.0" prefWidth="160.0" text="Special topics in Computer Science " />
+                                                      <Label layoutX="14.0" layoutY="126.0" prefHeight="17.0" prefWidth="268.0" text="Laboratory work " />
+                                                      <Label layoutX="14.0" layoutY="172.0" prefHeight="17.0" prefWidth="146.0" text="Seminar" />
+                                                      <Label layoutX="14.0" layoutY="217.0" prefHeight="17.0" prefWidth="245.0" text="Industrial Project (six months duration)" />
+                                                      <TextField fx:id="mod6" layoutX="348.0" layoutY="24.0" prefHeight="27.0" prefWidth="51.0" />
+                                                      <TextField fx:id="mod7" layoutX="348.0" layoutY="70.0" prefHeight="27.0" prefWidth="51.0" />
+                                                      <TextField fx:id="mod7" layoutX="348.0" layoutY="121.0" prefHeight="27.0" prefWidth="51.0" />
+                                                      <TextField fx:id="mod8" layoutX="348.0" layoutY="167.0" prefHeight="27.0" prefWidth="51.0" />
+                                                      <TextField fx:id="mod9" layoutX="348.0" layoutY="212.0" prefHeight="27.0" prefWidth="51.0" />
+                                                      <Label layoutX="16.0" layoutY="264.0" prefHeight="17.0" prefWidth="245.0" text="Research project (one year duration) " />
+                                                      <TextField fx:id="mod10" layoutX="346.0" layoutY="259.0" prefHeight="27.0" prefWidth="51.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="btnSubmit" layoutX="384.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnSubmit" text="Submit" />
+                        <AnchorPane layoutX="14.0" layoutY="17.0" prefHeight="200.0" prefWidth="377.0" style="-fx-background-color: grey;">
+                           <children>
+                              <Label layoutX="26.0" layoutY="71.0" text="Name :" />
+                              <Label layoutX="26.0" layoutY="117.0" text="Student Id :" />
+                              <TextField fx:id="txtName" layoutX="131.0" layoutY="66.0" />
+                              <TextField fx:id="txtStudId" layoutX="131.0" layoutY="112.0" />
+                           </children>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Optional Modules">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="841.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="55.0" prefHeight="501.0" prefWidth="814.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="138.0" prefHeight="17.0" prefWidth="284.0" text="Programming language design and compilers" />
+                              <Label layoutX="14.0" layoutY="186.0" prefHeight="17.0" prefWidth="233.0" text="Graph theory" />
+                              <TextField layoutX="344.0" layoutY="133.0" prefHeight="27.0" prefWidth="51.0" />
+                              <TextField layoutX="344.0" layoutY="181.0" prefHeight="27.0" prefWidth="51.0" />
+                              <TextField layoutX="344.0" layoutY="92.0" prefHeight="27.0" prefWidth="51.0" />
+                              <Label layoutX="14.0" layoutY="97.0" prefHeight="17.0" prefWidth="245.0" text="Introduction to parallel computing" />
+                              <TextField layoutX="344.0" layoutY="50.0" prefHeight="27.0" prefWidth="51.0" />
+                              <Label layoutX="14.0" layoutY="55.0" prefHeight="17.0" prefWidth="245.0" text="Combinatorial mathematics" />
+                              <Label layoutX="14.0" layoutY="314.0" prefHeight="17.0" prefWidth="284.0" text="Introduction to Wireless and Mobile Systems" />
+                              <Label layoutX="14.0" layoutY="362.0" prefHeight="17.0" prefWidth="233.0" text="Object Oriented Analysis and Design" />
+                              <TextField layoutX="344.0" layoutY="309.0" prefHeight="27.0" prefWidth="51.0" />
+                              <TextField layoutX="344.0" layoutY="357.0" prefHeight="27.0" prefWidth="51.0" />
+                              <TextField layoutX="344.0" layoutY="268.0" prefHeight="27.0" prefWidth="51.0" />
+                              <Label layoutX="14.0" layoutY="273.0" prefHeight="17.0" prefWidth="245.0" text="Programming Web Applications" />
+                              <TextField layoutX="344.0" layoutY="226.0" prefHeight="27.0" prefWidth="51.0" />
+                              <Label layoutX="14.0" layoutY="231.0" prefHeight="17.0" prefWidth="245.0" text="Web Servers and Technologies" />
+                              <Label layoutX="406.0" layoutY="138.0" prefHeight="17.0" prefWidth="284.0" text="Programming language design and compilers" />
+                              <Label layoutX="406.0" layoutY="186.0" prefHeight="17.0" prefWidth="233.0" text="Graph theory" />
+                              <TextField layoutX="736.0" layoutY="133.0" prefHeight="27.0" prefWidth="51.0" />
+                              <TextField layoutX="736.0" layoutY="181.0" prefHeight="27.0" prefWidth="51.0" />
+                              <TextField layoutX="736.0" layoutY="92.0" prefHeight="27.0" prefWidth="51.0" />
+                              <Label layoutX="406.0" layoutY="97.0" prefHeight="17.0" prefWidth="245.0" text="Introduction to parallel computing" />
+                              <TextField layoutX="736.0" layoutY="50.0" prefHeight="27.0" prefWidth="51.0" />
+                              <Label layoutX="406.0" layoutY="55.0" prefHeight="17.0" prefWidth="245.0" text="Combinatorial mathematics" />
+                              <Label layoutX="406.0" layoutY="314.0" prefHeight="17.0" prefWidth="284.0" text="Introduction to Wireless and Mobile Systems" />
+                              <Label layoutX="406.0" layoutY="362.0" prefHeight="17.0" prefWidth="233.0" text="Object Oriented Analysis and Design" />
+                              <TextField layoutX="736.0" layoutY="309.0" prefHeight="27.0" prefWidth="51.0" />
+                              <TextField layoutX="736.0" layoutY="357.0" prefHeight="27.0" prefWidth="51.0" />
+                              <TextField layoutX="736.0" layoutY="268.0" prefHeight="27.0" prefWidth="51.0" />
+                              <Label layoutX="406.0" layoutY="273.0" prefHeight="17.0" prefWidth="245.0" text="Programming Web Applications" />
+                              <TextField layoutX="736.0" layoutY="226.0" prefHeight="27.0" prefWidth="51.0" />
+                              <Label layoutX="406.0" layoutY="231.0" prefHeight="17.0" prefWidth="245.0" text="Web Servers and Technologies" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="34.0" layoutY="22.0" prefHeight="17.0" prefWidth="338.0" text="Semester 1">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="448.0" layoutY="22.0" text="Semester 2">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="380.0" text="University of Gugsi" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Palatino" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="689.0" layoutY="4.0" prefHeight="45.0" prefWidth="157.0" text="UOG">
+         <font>
+            <Font name="Lucida Sans Unicode" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
